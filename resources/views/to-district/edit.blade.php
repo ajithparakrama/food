@@ -142,8 +142,8 @@
                 "crop": crop, 
             },
             success: function(response) {
-                $('#havet').text(response[0]['cultivated_land']);
-                havest =  response[0]['cultivated_land'];
+                $('#havet').text(response[0]['total_retain_mt']);
+                havest =  response[0]['total_retain_mt'];
             },
             error: function(xhr, status, error) {
                console.log(error);

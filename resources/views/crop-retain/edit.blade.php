@@ -161,4 +161,21 @@
 @stop
 
 @section('third_party_scripts') 
+<script src="{{ asset('plugin/jquery/jquery.js') }}"></script>
+<script>
+    $(document).ready(function() {
+        var havest = 0;
+
+        $("#total_retain").keyup(function() { 
+            havest =  actual_harvest_mt = $('#actual_harvest_mt').val();
+            var number1 = parseFloat($("#total_retain").val()); 
+            if (!isNaN(number1) && !isNaN(havest)) {
+                var percentage = havest * (number1 / 100);
+                $('#total_retain_mt').val(percentage);
+            } else {
+
+            }
+        });
+    });
+</script>
 @stop

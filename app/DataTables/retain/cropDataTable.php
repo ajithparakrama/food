@@ -79,6 +79,8 @@ class cropDataTable extends DataTable
             Column::make('actual_harvest_mt'),
             Column::make('cultivation_changes_ha'),
             Column::make('reason_for_changes'),
+            Column::make('total_retain_mt'),
+            Column::make('total_retain'),
             Column::computed('action')
             ->exportable(false)
             ->printable(false)
